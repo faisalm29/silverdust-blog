@@ -1,4 +1,5 @@
 import AnchorLink from "./AnchorLink";
+import NowPlayingWidget from "./NowPlayingWidget";
 
 const links = [
   {
@@ -23,9 +24,9 @@ const Footer = (): JSX.Element => {
           </li>
         ))}
       </ul>
-      <p className="md:col-span-4 md:col-start-9 md:justify-self-end">
-        Spotify - Not playing
-      </p>
+      <div className="md:col-span-4 md:col-start-9 md:justify-self-end">
+        <NowPlayingWidget />
+      </div>
       <p className="text-center md:col-span-4 md:col-start-1 md:text-left">
         Created with 🤍 using{" "}
         <a
