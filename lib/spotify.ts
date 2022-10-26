@@ -1,11 +1,11 @@
 import queryString from "query-string";
 
 const {
-  NEXT_PUBLIC_SPOTIFY_CLIENT_ID: client_id,
-  NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET: client_secret,
-  NEXT_PUBLIC_SPOTIFY_REDIRECT_URI: redirect_uri,
-  NEXT_PUBLIC_SPOTIFY_CODE: code,
-  NEXT_PUBLIC_SPOTIFY_REFRESH_TOKEN: refresh_token,
+  SPOTIFY_CLIENT_ID: client_id,
+  SPOTIFY_CLIENT_SECRET: client_secret,
+  SPOTIFY_REDIRECT_URI: redirect_uri,
+  SPOTIFY_CODE: code,
+  SPOTIFY_REFRESH_TOKEN: refresh_token,
 } = process.env;
 
 const getAccessToken = async () => {

@@ -2,10 +2,10 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import queryString from "query-string";
 
 const {
-  NEXT_PUBLIC_SPOTIFY_CLIENT_ID: client_id,
-  NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET: client_secret,
-  NEXT_PUBLIC_SPOTIFY_REDIRECT_URI: redirect_uri,
-  NEXT_PUBLIC_SPOTIFY_CODE: code,
+  SPOTIFY_CLIENT_ID: client_id,
+  SPOTIFY_CLIENT_SECRET: client_secret,
+  SPOTIFY_REDIRECT_URI: redirect_uri,
+  SPOTIFY_CODE: code,
 } = process.env;
 
 export default async (_: NextApiRequest, res: NextApiResponse) => {
